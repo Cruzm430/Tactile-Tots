@@ -12,7 +12,7 @@ const WelcomeCarousel = () =>{
     <Carousel className='justify-content-center'>
     <Carousel.Item>
       <img
-        className="d-block"
+        className="d-block w-100"
         src={TT1}
         alt="First slide"
       />
@@ -23,7 +23,7 @@ const WelcomeCarousel = () =>{
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block"
+        className="d-block w-100 h-100"
         src={TT2}
         alt="Third slide"
       />
@@ -35,7 +35,7 @@ const WelcomeCarousel = () =>{
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block"
+        className="d-block w-100 h-100"
         src={TT3}
         alt="Third slide"
       />

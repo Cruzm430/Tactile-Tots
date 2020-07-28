@@ -11,6 +11,7 @@ import ClassCards from './Components/ClassCards/ClassCards';
 import VestibularFreePlay from './Pages/Classes/VestibularFreePlay';
 import StoryTime from './Pages/Classes/StoryTime'
 import Contact from './Pages/Contact/Contact';
+import Pricing from './Pages/Pricing/Pricing';
 
 function App() {
   return (
@@ -39,8 +40,11 @@ function App() {
       <Route exact path='/contact'>
         <Contact />
       </Route>
-
+      <Route exact path='/pricing'>
+        <Pricing />
+      </Route>
     </Switch>
+
     <Footer/>
     </div>
     </BrowserRouter>
