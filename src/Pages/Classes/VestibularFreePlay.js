@@ -1,7 +1,11 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import {Card, Button} from 'react-bootstrap';
+import CoronavirusModal from '../../Components/CoronavirusModal/CoronavirusModal' 
+
 
 const VestibularFreePlay = () =>{
+  const [modalShow, setModalShow] = React.useState(false);
+
   return(
     <div className='container bg-white my-3 rounded shadow-sm pt-3'>
       <h3 className='text-center mb-4'>Vestibular Free Play</h3>
@@ -42,6 +46,13 @@ const VestibularFreePlay = () =>{
           </Card>
           </div>
       </div> 
+      <div className='row justify-content-center pb-3'>
+      <Button onClick={() => setModalShow(true)}>Sign Up!</Button>
+      </div>
+      <CoronavirusModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </div>
   )
 }

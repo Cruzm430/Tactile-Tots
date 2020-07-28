@@ -10,10 +10,12 @@ import './App.css'
 import ClassCards from './Components/ClassCards/ClassCards';
 import VestibularFreePlay from './Pages/Classes/VestibularFreePlay';
 import StoryTime from './Pages/Classes/StoryTime'
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
     <BrowserRouter>
+    <div>
     <Header/>
     <Jumbo/>
     <NavBar/>
@@ -34,10 +36,13 @@ function App() {
       <Route exact path='/storyTime'>
         <StoryTime />
       </Route>
+      <Route exact path='/contact'>
+        <Contact />
+      </Route>
 
     </Switch>
-
     <Footer/>
+    </div>
     </BrowserRouter>
   );
 }
